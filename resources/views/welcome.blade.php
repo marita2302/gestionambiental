@@ -82,6 +82,42 @@
                     Laravel
                 </div>
 
+
+                <form>
+					                <div class="panel-body">
+					                    <div class="row">
+					                        <div class="col-sm-6">
+					                            <div class="form-group">
+					                                <label class="control-label">Firstname</label>
+					                                <input type="text" class="form-control">
+					                            </div>
+					                        </div>
+					                        <div class="col-sm-6">
+					                            <div class="form-group">
+					                                <label class="control-label">Lastname</label>
+					                                <input type="text" class="form-control">
+					                            </div>
+					                        </div>
+					                    </div>
+					                    <div class="row">
+					                        <div class="col-sm-6">
+					                            <div class="form-group">
+					                                <label class="control-label">Email</label>
+					                                <input type="email" class="form-control">
+					                            </div>
+					                        </div>
+					                        <div class="col-sm-6">
+					                            <div class="form-group">
+					                                <label class="control-label">Website</label>
+					                                <input type="url" class="form-control">
+					                            </div>
+					                        </div>
+					                    </div>
+					                </div>
+					                <div class="panel-footer text-right">
+					                    <button class="btn btn-success" type="submit">Submit</button>
+					                </div>
+					            </form>
                 <div class="links">
                     <a href="https://laravel.com/docs">Documentation</a>
                     <a href="https://laracasts.com">Laracasts</a>
