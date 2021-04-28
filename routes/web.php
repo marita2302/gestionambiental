@@ -11,8 +11,14 @@
 |
 */
 
+/* Ruta para acceder a las vistas 
+Route::view('/url', 'enlazar archivo vista');
+*/
+Route::view('/listaejemplo', 'ejemplo/lista');
+Route::view('/formulario', 'ejemplo/formulario');
+
+
 Route::get('/', function () {
-    return view('welcome');
+    return view('principal');
 });
 
-Route::view('/tipos', 'Residuos/tipos');
