@@ -12,6 +12,7 @@
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
     <link href="{{asset('css\bootstrap.min.css')}}" rel="stylesheet">
     <link href="{{asset('css\nifty.min.css')}}" rel="stylesheet">
+    <link href="{{asset('\css\sambiental.css')}}" rel="stylesheet">
     <link href="{{asset('css\demo\nifty-demo-icons.min.css')}}" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="{{asset('plugins\pace\pace.min.css')}}" rel="stylesheet">
@@ -34,7 +35,7 @@
                 <!--================================-->
                 <div class="navbar-header">
                     <a href="#" class="navbar-brand">
-                        <img src="img\logo.png" alt="Nifty Logo" class="brand-icon">
+                        <img src="\img\logo.png" alt="Nifty Logo" class="brand-icon">
                         <div class="brand-title">
                             <span class="brand-text">Ambiente</span>
                         </div>
@@ -214,7 +215,7 @@
                                 <div id="mainnav-profile" class="mainnav-profile">
                                     <div class="profile-wrap text-center">
                                         <div class="pad-btm">
-                                            <img class="img-circle img-md" src="img\profile-photos\1.png" alt="Profile Picture">
+                                            <img class="img-circle img-md" src="\img\profile-photos\1.png" alt="Profile Picture">
                                         </div>
                                         <a href="#profile-nav" class="box-block" data-toggle="collapse" aria-expanded="false">
                                             <span class="pull-right dropdown-toggle">
@@ -306,7 +307,7 @@
 						                </a>
 						            </li>
                                     <li>
-						                <a href="">
+						                <a href="{{url('/empresa/')}}">
 						                    <i class="demo-pli-gear"></i>
 						                    <span class="menu-title">
 												Gestión de Empresas
