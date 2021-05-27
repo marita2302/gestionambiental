@@ -1,6 +1,7 @@
 @extends('menu/menu')
 
 @section('head')
+<script src="{{asset('js\eliminar.js')}}"></script>
 <!--Tag para el titulo de la vista-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <div id="page-title">
@@ -28,8 +29,9 @@
       
     </div>
     <div class="panel-body">
-        <a href="{{ route('empresa.create') }}" title="Agregar"> <button class="btn btn-success btn-icon"><i class="fa fa-plus icon-lg"></i></button></a>
-        <table id="demo-dt-basic" class="table table-striped table-bordered" cellspacing="0" width="100%">
+        <a href="{{ route('empresa.create') }}" title="Agregar"> <button class="btn btn-success btn-icon btn-new"><i class="fa fa-plus icon-lg"></i></button></a>
+
+        <table id="demo-dt-basic" class="table table-striped table-bordered " cellspacing="0" width="100%">
             <thead>
                 <tr>
                     <th>COD</th>
@@ -40,6 +42,7 @@
                     <th>TELÉFONO</th>
                     <th>CORREO</th>
                     <th>CONSULTOR</th>
+                    <th>OPCIONES</th>
                 </tr>
             </thead>
             <tbody>
@@ -54,6 +57,10 @@
                     <td>{{$item->tel_empresa}}</td>
                     <td>{{$item->correo_empresa}}</td>
                     <td>{{$item->consultor_empresa}}</td>
+                    <td>
+                    <a class="btn-eliminar" onclick="eliminarDato('{{ route('empresa.destroy',$item->cod_empresa) }}','{{$item->nom_empresa}}' )"  > <i class="fa fa-trash-o delete" aria-hidden="true"></i></a>
+
+                    </td>
 
                     
                 </tr>

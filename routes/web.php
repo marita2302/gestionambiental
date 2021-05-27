@@ -11,11 +11,12 @@
 |
 */
 
-/* Ruta para acceder a las vistas 
+/*/* Ruta para acceder a las vistas 
 Route::view('/url', 'enlazar archivo vista');
 */
 /*Route::view('/listaejemplo', 'ejemplo/lista');
 Route::view('/formulario', 'ejemplo/formulario');*/
+
 Route::resource('empresa','EmpresasController');
 
 

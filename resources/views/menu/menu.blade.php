@@ -12,13 +12,15 @@
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
     <link href="{{asset('css\bootstrap.min.css')}}" rel="stylesheet">
     <link href="{{asset('css\nifty.min.css')}}" rel="stylesheet">
-    <link href="{{asset('\css\sambiental.css')}}" rel="stylesheet">
+    <link href="{{asset('css\sambiental.css')}}" rel="stylesheet">
     <link href="{{asset('css\demo\nifty-demo-icons.min.css')}}" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="{{asset('plugins\pace\pace.min.css')}}" rel="stylesheet">
     <script src="{{asset('plugins\pace\pace.min.js')}}"></script>
     <link href="{{asset('css\demo\nifty-demo.min.css')}}" rel="stylesheet">
-
+    <link rel="stylesheet" href=" https://cdn.jsdelivr.net/npm/sweetalert2@11.0.11/dist/sweetalert2.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.11/dist/sweetalert2.min.js"></script>
+   
 
         
 </head>

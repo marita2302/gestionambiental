@@ -1,8 +1,9 @@
 @extends('menu/menu')
-
 @section('head')
 <!--Tag para el titulo de la vista-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<script src="{{asset('js\sisambiental.js')}}"></script>
+
 <div id="page-title">
     <h1 class="page-header text-overflow">Empresa</h1>
 </div>
@@ -12,27 +13,32 @@
 <ol class="breadcrumb">
     <li><a href="#"><i class="demo-pli-home"></i></a></li>
     <li><a href="#">Empresa</a></li>
-    <li><a href="#">Lista</a></li>
+    <li><a href="{{url('/empresa/')}}">Lista</a></li>
     <li class="active">Crear Empresa</li>
 </ol>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
 
 @endsection
 
 @section('body')
 <div class="panel">
     <div class="panel-heading">
-        @if ($message = Session::get('success'))
-        <div class="alert alert-mint">
-            <strong>Mensaje del sistema</strong> {{ $message }}
-        </div>
-        @endif
+    <h3 class="panel-title">Formulario registro de Empresas</h3>
     </div>
+@if ($message = Session::get('error'))
+<script>
+error();
+<script>
+@endif
     <div class="panel-body">
-       
+ 
         <div class="panel panel-bordered panel-mint">
             <div class="panel-heading">
+@if ($message = Session::get('success'))
+<script>
+success();
+</script>       
+@endif
                 <h3 class="panel-title">   <h3 class="panel-title">Crear Empresas</h3></h3>
             </div>
             <div class="panel-body">
@@ -42,7 +48,7 @@
                         <div class="row">
                             <div class="col-sm-6">
                                 <div class="form-group">
-                                    <label class="control-label">Empresa</label>
+                                    <label class="control-label">EMPRESA</label>
                                     <input type="text" name="empresa" class="form-control" value="{{old('empresa')}}" >
                                     <span class="text-danger">{{ $errors->first('empresa') }}</span>
                                 </div>
