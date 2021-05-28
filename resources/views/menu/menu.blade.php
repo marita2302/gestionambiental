@@ -20,7 +20,7 @@
     <link href="{{asset('css\demo\nifty-demo.min.css')}}" rel="stylesheet">
     <link rel="stylesheet" href=" https://cdn.jsdelivr.net/npm/sweetalert2@11.0.11/dist/sweetalert2.min.css">
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.11/dist/sweetalert2.min.js"></script>
-   
+    <script src="{{asset('js\delete.js')}}"></script>
 
         
 </head>

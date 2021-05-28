@@ -29,7 +29,7 @@
       
     </div>
     <div class="panel-body">
-        <a href="{{ route('empresa.create') }}" title="Agregar"> <button class="btn btn-success btn-icon btn-new"><i class="fa fa-plus icon-lg"></i></button></a>
+        <a class="btn btn-success btn-icon btn-new" href="{{ route('empresa.create') }}" title="Agregar"><i class="fa fa-plus icon-lg"></i> Agregar</a>
 
         <table id="demo-dt-basic" class="table table-striped table-bordered " cellspacing="0" width="100%">
             <thead>
@@ -58,7 +58,8 @@
                     <td>{{$item->correo_empresa}}</td>
                     <td>{{$item->consultor_empresa}}</td>
                     <td>
-                    <a class="btn-eliminar" onclick="eliminarDato('{{ route('empresa.destroy',$item->cod_empresa) }}','{{$item->nom_empresa}}' )"  > <i class="fa fa-trash-o delete" aria-hidden="true"></i></a>
+                    <a class="btn-eliminar" onclick="eliminarDato('{{route('empresaDelete',$item) }}','{{$item->nom_empresa}}' )"  > <i class="fa fa-trash-o delete" aria-hidden="true"></i></a>
+                    <a class="btn-eliminar" href="{{route('empresa.show',$item)}}" > <i class="fa fa-pencil-square-o " aria-hidden="true"></i></a>
 
                     </td>
 
