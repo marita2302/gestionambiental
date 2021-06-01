@@ -317,6 +317,15 @@
 											</span>
 						                </a>
 						            </li>
+                                    <li>
+						                <a href="{{url('/sucursal/')}}">
+						                    <i class="demo-pli-gear"></i>
+						                    <span class="menu-title">
+												Gestión de Sucursales
+												
+											</span>
+						                </a>
+						            </li>
 						
 
 						            <li class="list-divider"></li>

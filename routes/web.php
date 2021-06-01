@@ -18,6 +18,7 @@ Route::view('/url', 'enlazar archivo vista');
 Route::view('/formulario', 'ejemplo/formulario');*/
 
 Route::resource('empresa','EmpresasController');
+Route::resource('sucursal','SucursalController');
 Route::get('empresaDelete/{empresa}', 'EmpresasController@eliminar')
          ->name('empresaDelete');
 
